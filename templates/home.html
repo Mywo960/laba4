@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Калькулятор сложных процентов</title>
+  </head>
+  <body>
+    <h1>Калькулятор сложных процентов</h1>
+    <form action="/calculate" method="post">
+      <label for="principal">Начальная сумма:</label>
+      <input type="number" id="principal" name="principal" required><br><br>
+      <label for="rate">Проценты (%):</label>
+      <input type="number" id="rate" name="rate" required><br><br>
+      <label for="time">Период в годах:</label>
+      <input type="number" id="time" name="time" required><br><br>
+      <label for="n">Число реинвестирований:</label>
+      <select name="n">
+        <option value="1">Ежегодно</option>
+        <option value="2">Раз в полгода</option>
+        <option value="4">Раз в квартал</option>
+        <option value="12">Ежемесячно</option>
+      </select>
+      <input type="submit" value="Calculate">
+    </form>
+  </body>
+</html>
